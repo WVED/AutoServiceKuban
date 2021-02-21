@@ -1,0 +1,41 @@
+﻿<Window x:Class="AutoService.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoService"
+        mc:Ignorable="d"
+        Title="Главное окно" Height="500" Width="1050" MinHeight="500" MinWidth="1050" Icon="Resources/service_logo.ico">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="120"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Image Source="Resources/service_logo.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Height="90" Margin="15,0,0,0"></Image>
+        <Grid Grid.Column="1" Height="270" Width="400">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+                <ColumnDefinition Width="200"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Image Name="RoleImage" Source="Resources/АдмМенеджер.png" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.RowSpan="3" Height="180"></Image>
+            <Grid Grid.Column="1">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                    <RowDefinition Height="*"></RowDefinition>
+                </Grid.RowDefinitions>
+                <TextBlock Text="Имя: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockLastName"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Фамилия: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockFirstName"></TextBlock>
+        <TextBlock Grid.Row="2" Text="Роль: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockRole"></TextBlock>
+                </Grid>
+            </Grid>
+        <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"></Frame>
+        <Button Width="110" Height="25" Content="Закрыть" FontFamily="Comic Sans MC" Name="BtnExit" Margin="0,420,0,0" Click="BtnExit_Click"></Button>
+        <Button Width="110" Height="25" Content="Выйти" FontFamily="Comic Sans MC" Margin="0,350,0,0" Name="BtnLogOut" Click="BtnLogOut_Click"></Button>
+        <Button Width="110" Height="25" Content="Пользователи" FontFamily="Comic Sans MC" Margin="0,100,0,0" Name="BtnUsers" Click="BtnUsers_Click"></Button>
+        <Button Width="110" Height="25" Content="Услуги" FontFamily="Comic Sans MC" Margin="0,-60,0,0" Name="BtnService" Click="BtnService_Click"></Button>
+        <Button Width="110" Height="25" Content="Клиенты" FontFamily="Comic Sans MC" Margin="0,20,0,0" Name="BtnClient" Click="BtnClient_Click"></Button>
+        <Button Width="110" Height="25" Content="Предост. услуги" FontFamily="Comic Sans MC" Margin="0,-140,0,0" Name="BtnClientService" Click="BtnClientService_Click"></Button>
+        <Button Width="110" Height="25" Content="История входа" FontFamily="Comic Sams MC" Margin="0,180,0,0" Name="BtnHistory" Click="BtnHistory_Click"></Button>
+    </Grid>
+</Window>

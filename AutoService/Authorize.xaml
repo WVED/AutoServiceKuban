@@ -1,0 +1,22 @@
+﻿<Window x:Class="AutoService.Authorize"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:AutoService"
+        mc:Ignorable="d"
+        Title="Авторизация" Height="380" Width="500" MaxHeight="380" MaxWidth="500" MinHeight="380" MinWidth="500" Icon="Resources/service_logo.ico">
+    <Grid>
+        <Image Source="Resources/service_logo.png" Width="100" Height="100" VerticalAlignment="Top" HorizontalAlignment="Left" Margin="10,0,0,0"></Image>
+        <TextBlock FontFamily="Comic Sans MC" Text="Авторизация" FontSize="25" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,30,0,0"></TextBlock>
+        <TextBox Visibility="Hidden" Name="TxtBxPasswd" Margin="0,100,0,0"></TextBox>
+        <TextBlock Text="Логин" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,-150,0,0" FontSize="20"></TextBlock>
+        <TextBox Name="TxtBxLgn" Margin="0,-70,0,0"></TextBox>
+        <TextBlock Text="Пароль" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="0,20,0,0" FontSize="20"></TextBlock>
+        <PasswordBox Name="PasswdBx" Margin="0,100,0,0" Width="100" Height="22" ></PasswordBox>
+        <TextBlock Text="Показать пароль" Width="125" Height="20" Margin="320,100,0,0" FontSize="15" Name="TxtBlckPasswd"></TextBlock>
+        <CheckBox Name="ChkBxPasswd" Width="15" Height="15" Margin="170,100,0,0" Click="PasswdBx_Click"></CheckBox>
+        <Button Width="100" Content="Авторизоваться" FontFamily="Comic Sans MC" Height="23" Margin="0,200,0,0" Name="BtnLgn" Click="BtnLgn_Click"></Button>
+        <Button Name="BtnCls" Content="Закрыть" FontFamily="Comic Sans MC" Margin="0,270,0,0" Width="100" Height="23" Click="BtnCls_Click"></Button>
+    </Grid>
+</Window>
