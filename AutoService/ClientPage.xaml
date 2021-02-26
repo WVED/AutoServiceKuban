@@ -6,14 +6,13 @@
       xmlns:local="clr-namespace:AutoService"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ClientPage" Height="450" Width="900" MaxHeight="500" MaxWidth="950" MinHeight="450" MinWidth="850">
+      Title="ClientPage" Height="450" Width="900">
 
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="30"></RowDefinition>
         </Grid.RowDefinitions>
-        <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True">
+        <DataGrid x:Name="DGridClient" AutoGenerateColumns="False" IsReadOnly="True" Height="auto" Width="auto">
             <DataGrid.Columns>
                 <DataGridTextColumn Header="Фамилия" Binding="{Binding LastName}" Width="80"></DataGridTextColumn>
                 <DataGridTextColumn Header="Имя" Binding="{Binding FirstName}" Width="70"></DataGridTextColumn>

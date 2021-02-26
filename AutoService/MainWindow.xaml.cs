@@ -30,14 +30,17 @@ namespace AutoService
             if (Manager.role == "admin")
             {
                 RoleImage.Source = new BitmapImage(new Uri($"Resources/АдмМенеджер.png", UriKind.Relative));
+                txtBlckHeader.Text = "Окно администратора";
             }
             else if (Manager.role == "manager")
             {
                 RoleImage.Source = new BitmapImage(new Uri($"Resources/Менеджер.png", UriKind.Relative));
+                txtBlckHeader.Text = "Окно менеджера";
             }
             else if (Manager.role == "booker")
             {
                 RoleImage.Source = new BitmapImage(new Uri($"Resources/Бухгалтер.png", UriKind.Relative));
+                txtBlckHeader.Text = "Окно бухгалтера";
             }
         }
 

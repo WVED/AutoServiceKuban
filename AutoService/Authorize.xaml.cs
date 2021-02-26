@@ -96,8 +96,7 @@ namespace AutoService
             {
                 MessageBox.Show("Вы ввели неверный логин или пароль", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                 counter++;
-                if (count == 0)
-                {
+
                     try
                     {
                         userAuth.DateTime = DateTime.Now;
@@ -110,7 +109,6 @@ namespace AutoService
                     {
                         MessageBox.Show(ex.Message.ToString());
                     }
-                }
             }
             if (counter %3 == 0 && counter != 0)
             {

@@ -5,12 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:AutoService"
         mc:Ignorable="d"
-        Title="Главное окно" Height="500" Width="1050" MinHeight="500" MinWidth="1050" Icon="Resources/service_logo.ico">
+        Title="Главное окно" Height="500" Width="1050" MinHeight="500" MinWidth="1050" MaxWidth="1300" MaxHeight="700" Icon="Resources/service_logo.ico">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="120"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
+        <TextBlock FontSize="16" VerticalAlignment="Top" HorizontalAlignment="Center" Grid.Column="1" Name="txtBlckHeader" Margin="0,15,0,0"></TextBlock>
         <Image Source="Resources/service_logo.png" VerticalAlignment="Top" HorizontalAlignment="Left" Width="90" Height="90" Margin="15,0,0,0"></Image>
         <Grid Grid.Column="1" Height="270" Width="400">
             <Grid.ColumnDefinitions>
@@ -24,9 +25,9 @@
                     <RowDefinition Height="*"></RowDefinition>
                     <RowDefinition Height="*"></RowDefinition>
                 </Grid.RowDefinitions>
-                <TextBlock Text="Имя: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockLastName"></TextBlock>
-        <TextBlock Grid.Row="1" Text="Фамилия: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockFirstName"></TextBlock>
-        <TextBlock Grid.Row="2" Text="Роль: " FontFamily="Comic Sans MC" VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockRole"></TextBlock>
+                <TextBlock Text="Имя: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockLastName"></TextBlock>
+        <TextBlock Grid.Row="1" Text="Фамилия: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockFirstName"></TextBlock>
+        <TextBlock Grid.Row="2" Text="Роль: " VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="16" Name="TxtBlockRole"></TextBlock>
                 </Grid>
             </Grid>
         <Frame Name="MainFrame" Grid.Column="1" NavigationUIVisibility="Hidden"></Frame>

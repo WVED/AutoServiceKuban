@@ -6,14 +6,14 @@
       xmlns:local="clr-namespace:AutoService"
       mc:Ignorable="d" 
       d:DesignHeight="450" d:DesignWidth="800"
-      Title="ClientServiceAddPage" Height="450" Width="850" MaxHeight="500" MaxWidth="900" MinHeight="450" MinWidth="850">
+      Title="ClientServiceAddPage" Height="450" Width="850">
 
     <Grid>
         <Grid.RowDefinitions>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
@@ -28,6 +28,6 @@
         <ComboBox SelectedItem="{Binding Service}" Grid.Column="1" Grid.Row="1" Width="300" Height="25" x:Name="ComboService" DisplayMemberPath="Title"></ComboBox>
         <DatePicker Name="DatePick" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Width="300"></DatePicker>
         <TextBox Grid.Column="1" Grid.Row="3" Width="300" Height="25"></TextBox>
-        <Button FontSize="15" Content="Сохранить" Name="BtnSave" VerticalAlignment="Bottom" HorizontalAlignment="Center" Click="BtnSave_Click" Grid.Row="4" Grid.Column="2" FontFamily="Comic Sans MC" Width="200" Height="25" Margin="0,0,300,1"></Button>
+        <Button FontSize="15" Content="Сохранить" Name="BtnSave" VerticalAlignment="Bottom" Grid.Column="1" HorizontalAlignment="Center" Click="BtnSave_Click" Grid.Row="4" FontFamily="Comic Sans MC" Width="110" Height="25" Margin="0,0,400,1"></Button>
     </Grid>
 </Page>

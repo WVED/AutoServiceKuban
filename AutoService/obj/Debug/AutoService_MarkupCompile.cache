@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\WVED\source\repos\AutoService\AutoService\App.xaml
-11633072731
+14-1211416381
 2-950728389
-34303567382
+37768277379
 18-730600720
-Authorize.xaml;ClientEditPage.xaml;ClientPage.xaml;ClientServiceAddPage.xaml;ClientServicePage.xaml;HistoryPage.xaml;MainWindow.xaml;ServiceAddPage.xaml;ServicePage.xaml;UserEditPage.xaml;UsersPage.xaml;
+AdminPage.xaml;Authorize.xaml;BookerPage.xaml;ClientEditPage.xaml;ClientPage.xaml;ClientServiceAddPage.xaml;ClientServicePage.xaml;HistoryPage.xaml;MainWindow.xaml;ManagerPage.xaml;ServiceAddPage.xaml;ServicePage.xaml;UserEditPage.xaml;UsersPage.xaml;
 
 False
 
